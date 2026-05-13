@@ -1,5 +1,5 @@
 // ---- PIN / LOCK SCREEN ----
-const CORRECT_PIN = '04042024';
+const CORRECT_PIN = '04042025';
 let pin = '';
 
 function pressNum(n) {
