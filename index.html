@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Our Date Planner 💕</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- LOCK SCREEN -->
+  <div id="lock-screen">
+    <div class="lock-hearts">💕</div>
+    <h1 class="lock-title">Date Checklist For Today</h1>
+    <p class="lock-subtitle">Enter the secret code to continue(Our anniversary)</p>
+    <div class="lock-card">
+      <p class="lock-label">🔒 PIN Code</p>
+      <div class="pin-dots" id="pin-dots">
+        <div class="pin-dot" id="d0"></div>
+        <div class="pin-dot" id="d1"></div>
+        <div class="pin-dot" id="d2"></div>
+        <div class="pin-dot" id="d3"></div>
+        <div class="pin-dot" id="d4"></div>
+        <div class="pin-dot" id="d5"></div>
+        <div class="pin-dot" id="d6"></div>
+        <div class="pin-dot" id="d7"></div>
+      </div>
+      <p class="lock-error" id="lock-error">&nbsp;</p>
+      <div class="numpad">
+        <button class="num-btn" onclick="pressNum('1')">1</button>
+        <button class="num-btn" onclick="pressNum('2')">2</button>
+        <button class="num-btn" onclick="pressNum('3')">3</button>
+        <button class="num-btn" onclick="pressNum('4')">4</button>
+        <button class="num-btn" onclick="pressNum('5')">5</button>
+        <button class="num-btn" onclick="pressNum('6')">6</button>
+        <button class="num-btn" onclick="pressNum('7')">7</button>
+        <button class="num-btn" onclick="pressNum('8')">8</button>
+        <button class="num-btn" onclick="pressNum('9')">9</button>
+        <button class="num-btn empty"></button>
+        <button class="num-btn" onclick="pressNum('0')">0</button>
+        <button class="num-btn del" onclick="pressDelete()">⌫</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN APP -->
+  <div class="phone-wrap" id="app">
+    <div class="header">
+      <div class="header-deco">🌸</div>
+      <h1 class="greeting">Hello My Bodadids!</h1>
+      <p class="sub-greeting">✨ Are you ready my baby? ✨</p>
+    </div>
+
+    <div class="progress-section">
+      <div class="progress-label">
+        <span class="progress-text">💖 Date Progress</span>
+        <span class="progress-count" id="prog-count">0 / 5</span>
+      </div>
+      <div class="progress-bar-bg">
+        <div class="progress-bar-fill" id="prog-bar"></div>
+      </div>
+    </div>
+
+    <div class="tasks-container" id="tasks-container"></div>
+
+    <div class="footer-hearts">🌷 💜 🌷</div>
+  </div>
+
+  <!-- CONFETTI -->
+  <div id="confetti-area"></div>
+  <div id="celebration-banner">🎉 All done! Best date ever! 💕</div>
+
+  <!-- I LOVE YOU POPUP -->
+  <div id="ily-overlay">
+    <div id="ily-card">
+      <span class="ily-hearts">💗</span>
+      <div class="ily-text">I Love You My GF Trisha!</div>
+      <p class="ily-sub">Thanks for this amazing date baby! 🌸✨</p>
+      <button class="ily-close" onclick="closeIly()">Aww, love you too! 💕</button>
+      <p class="ily-from">— From your BF Mat 💜</p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
